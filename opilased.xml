@@ -19,6 +19,15 @@
         </elukoht>
     </opilane>
     <opilane>
+        <nimi>Uku2</nimi>
+        <isikukood>234567890</isikukood>
+        <eriala>Logistika</eriala>
+        <elukoht>
+            <linn>Tartu</linn>
+            <maakond>Idaviru</maakond>
+        </elukoht>
+    </opilane>
+    <opilane>
         <nimi>Jasper</nimi>
         <isikukood>345678901</isikukood>
         <eriala>Mehhatroonik</eriala>
