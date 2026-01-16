@@ -82,8 +82,7 @@ if(!empty($_POST["otsing"])){
                     <th>Õpilase nimi</th>
                     <th>Isikukood</th>
                     <th>Eriala</th>
-                    <th>Aine A</th>
-                    <th>Aine B</th>
+                    <th>Ained</th>
                     <th>Elukoht</th>
                 </tr>";
     foreach ($tulemus as $opilane) {
@@ -91,8 +90,14 @@ if(!empty($_POST["otsing"])){
         echo "<td>".$opilane->nimi."</td>";
         echo "<td>".$opilane->isikukood."</td>";
         echo "<td>".$opilane->eriala."</td>";
-        echo "<td>".$opilane->aineA->nimiA.", ".$opilane->aineA->hinneA."</td>";
-        echo "<td>".$opilane->aineB->nimiB.", ".$opilane->aineB->hinneB."</td>";
+        echo "<td>";
+            if($opilane->ained->count()>0){
+                foreach ($opilane->ained->aine as $aine)
+                {
+                    echo $aine->nimi.", ".$aine->hinne."<br>";
+                }
+            }
+        echo "</td>";
         echo "<td>".$opilane->elukoht->linn.", ".$opilane->elukoht->maakond."</td>";
         echo "<td><img src='".$opilane->pilt."' alt='Pilt'/></td>";
         echo "</tr>";
@@ -107,8 +112,7 @@ if(!empty($_POST["otsing"])){
         <th>Õpilase nimi</th>
         <th>Isikukood</th>
         <th>Eriala</th>
-        <th>Aine A</th>
-        <th>Aine B</th>
+        <th>Ained</th>
         <th>Elukoht</th>
     </tr>
         <?php
@@ -117,8 +121,14 @@ if(!empty($_POST["otsing"])){
         echo "<td>".$opilane->nimi."</td>";
         echo "<td>".$opilane->isikukood."</td>";
         echo "<td>".$opilane->eriala."</td>";
-        echo "<td>".$opilane->aineA->nimiA.", ".$opilane->aineA->hinneA."</td>";
-        echo "<td>".$opilane->aineB->nimiB.", ".$opilane->aineB->hinneB."</td>";
+        echo "<td>";
+            if($opilane->ained->count()>0){
+                foreach ($opilane->ained->aine as $aine)
+                {
+                    echo $aine->nimi.", ".$aine->hinne."<br>";
+                }
+            }
+            echo "</td>";
         echo "<td>".$opilane->elukoht->linn.", ".$opilane->elukoht->maakond."</td>";
         echo "<td><img src='".$opilane->pilt."' alt='Pilt'/></td>";
         echo "</tr>";

@@ -53,14 +53,16 @@
       <linn>Tallinn</linn>
       <maakond>Harjumaa</maakond>
     </elukoht>
-    <aineA>
-      <nimiA>Matemaatika</nimiA>
-      <hinneA>3</hinneA>
-    </aineA>
-    <aineB>
-      <nimiB>Kirjandus</nimiB>
-      <hinneB>5</hinneB>
-    </aineB>
+    <ained>
+        <aine>
+            <nimi>Matemaatika</nimi>
+            <hinne>3</hinne>
+        </aine>
+        <aine>
+            <nimi>Kirjandus</nimi>
+            <hinne>5</hinne>
+        </aine>
+    </ained>
     <pilt/>
   </opilane>
   <opilane>
@@ -68,14 +70,16 @@
       <linn>Test</linn>
       <maakond>Test</maakond>
     </elukoht>
-    <aineA>
-      <nimiA>Inglise</nimiA>
-      <hinneA>5</hinneA>
-    </aineA>
-    <aineB>
-      <nimiB>Matem</nimiB>
-      <hinneB>4</hinneB>
-    </aineB>
+      <ained>
+          <aine>
+              <nimi>Matemaatika</nimi>
+              <hinne>3</hinne>
+          </aine>
+          <aine>
+              <nimi>Kirjandus</nimi>
+              <hinne>5</hinne>
+          </aine>
+      </ained>
     <nimi>Test</nimi>
     <isikukood>2</isikukood>
     <eriala>Test</eriala>
