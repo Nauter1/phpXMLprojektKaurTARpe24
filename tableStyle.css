@@ -1,11 +1,15 @@
+
+
 table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    background-color: darkblue;
 }
 
 tr, td{
-    border: 2px solid black;
+    border: 2px solid white;
+    background-color: darkblue;
 }
 
 #sisesta{
@@ -15,4 +19,20 @@ tr, td{
 img{
     width: auto;
     height: 100px;
+}
+
+h1{
+    border: 2px dotted black;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    border: 2px dotted black;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: lightskyblue;
+    color: white;
 }

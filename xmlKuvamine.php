@@ -12,25 +12,42 @@ function opilaseSisestamine(){
     $xmlRoot->appendChild($xml_opilane);
     $elukoht = $xmlDoc->createElement("elukoht");
     $xml_opilane->appendChild($elukoht);
-    $aineA = $xmlDoc->createElement("aineA");
-    $xml_opilane->appendChild($aineA);
-    $aineB = $xmlDoc->createElement("aineB");
-    $xml_opilane->appendChild($aineB);
+    $ained = $xmlDoc->createElement("ained");
+    $xml_opilane->appendChild($ained);
     unset($_POST['submit']);
     foreach($_POST as $voti=>$vaartus){
         $kirje = $xmlDoc->createElement($voti,$vaartus);
         if($voti == "linn" || $voti == "maakond")
         {
             $elukoht->appendChild($kirje);
-        } else
-            if($voti == "nimiA" || $voti == "hinneA")
+        }
+        else
+            if($voti == "oppeaine1")
             {
-                $aineA->appendChild($kirje);
-            } else
-                if($voti == "nimiB" || $voti == "hinneB")
+                $aine = $xmlDoc->createElement("aine");
+                $aine->appendChild($xmlDoc->createElement("nimi", $vaartus));
+                $ained->appendChild($aine);
+            }
+            else
+                if($voti == "oppeaine1hinne1")
                 {
-                    $aineB->appendChild($kirje);
-                } else
+                    $aine->appendChild($xmlDoc->createElement("hinne", $vaartus));
+                    $ained->appendChild($aine);
+                }
+                else
+                    if($voti == "oppeaine2")
+                    {
+                        $aine = $xmlDoc->createElement("aine");
+                        $aine->appendChild($xmlDoc->createElement("nimi", $vaartus));
+                        $ained->appendChild($aine);
+                    }
+                    else
+                        if($voti == "oppeaine2hinne2")
+                        {
+                            $aine->appendChild($xmlDoc->createElement("hinne", $vaartus));
+                            $ained->appendChild($aine);
+                        } else
+
         $xml_opilane->appendChild($kirje);
     }
     $xmlDoc->save('opilased.xml');
@@ -167,20 +184,19 @@ if(!empty($_POST["otsing"])){
                 <td><input type="text" name="maakond" id="maakond"></td>
             </tr>
             <tr>
-                <td><label for="nimiA">Aine A:</label></td>
-                <td><input type="text" name="nimiA" id="nimiA"></td>
+                <td><label for="nimiA">Aine A:</label>
+                <input type="text" name="oppeaine1" id="nimiA"></td>
+                <td><label for="hinneA">Hinne A:</label>
+                <input type="number" min="1" max="5" name="oppeaine1hinne1" id="hinneA"></td>
             </tr>
             <tr>
-                <td><label for="hinneA">Hinne A:</label></td>
-                <td><input type="text" name="hinneA" id="hinneA"></td>
+
             </tr>
             <tr>
-                <td><label for="nimiB">Aine B:</label></td>
-                <td><input type="text" name="nimiB" id="nimiB"></td>
-            </tr>
-            <tr>
-                <td><label for="hinneB">Hinne B:</label></td>
-                <td><input type="text" name="hinneB" id="hinneB"></td>
+                <td><label for="nimiA">Aine B:</label>
+                    <input type="text" name="oppeaine2" id="nimiA"></td>
+                <td><label for="hinneA">Hinne B:</label>
+                    <input type="number" min="1" max="5" name="oppeaine2hinne2" id="hinneA"></td>
             </tr>
             <tr>
                 <td><label for="pilt">Pilt:</label></td>

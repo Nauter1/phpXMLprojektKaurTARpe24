@@ -8,16 +8,16 @@
       <linn>Tallinn</linn>
       <maakond>Harjumaa</maakond>
     </elukoht>
-      <ained>
-          <aine>
-              <nimi>Matemaatika</nimi>
-              <hinne>3</hinne>
-          </aine>
-          <aine>
-              <nimi>Kirjandus</nimi>
-              <hinne>5</hinne>
-          </aine>
-      </ained>
+    <ained>
+      <aine>
+        <nimi>Matemaatika</nimi>
+        <hinne>3</hinne>
+      </aine>
+      <aine>
+        <nimi>Kirjandus</nimi>
+        <hinne>5</hinne>
+      </aine>
+    </ained>
   </opilane>
   <opilane>
     <nimi>Uku</nimi>
@@ -27,16 +27,16 @@
       <linn>Tartu</linn>
       <maakond>Idaviru</maakond>
     </elukoht>
-      <ained>
-          <aine>
-              <nimi>Matemaatika</nimi>
-              <hinne>3</hinne>
-          </aine>
-          <aine>
-              <nimi>Kirjandus</nimi>
-              <hinne>5</hinne>
-          </aine>
-      </ained>
+    <ained>
+      <aine>
+        <nimi>Matemaatika</nimi>
+        <hinne>3</hinne>
+      </aine>
+      <aine>
+        <nimi>Kirjandus</nimi>
+        <hinne>5</hinne>
+      </aine>
+    </ained>
   </opilane>
   <opilane>
     <nimi>Uku2</nimi>
@@ -46,16 +46,16 @@
       <linn>Tartu</linn>
       <maakond>Idaviru</maakond>
     </elukoht>
-      <ained>
-          <aine>
-              <nimi>Matemaatika</nimi>
-              <hinne>3</hinne>
-          </aine>
-          <aine>
-              <nimi>Kirjandus</nimi>
-              <hinne>5</hinne>
-          </aine>
-      </ained>
+    <ained>
+      <aine>
+        <nimi>Matemaatika</nimi>
+        <hinne>3</hinne>
+      </aine>
+      <aine>
+        <nimi>Kirjandus</nimi>
+        <hinne>5</hinne>
+      </aine>
+    </ained>
   </opilane>
   <opilane>
     <nimi>Jasper</nimi>
@@ -65,16 +65,16 @@
       <linn>Narva</linn>
       <maakond>Idaviru</maakond>
     </elukoht>
-      <ained>
-          <aine>
-              <nimi>Matemaatika</nimi>
-              <hinne>3</hinne>
-          </aine>
-          <aine>
-              <nimi>Kirjandus</nimi>
-              <hinne>5</hinne>
-          </aine>
-      </ained>
+    <ained>
+      <aine>
+        <nimi>Matemaatika</nimi>
+        <hinne>3</hinne>
+      </aine>
+      <aine>
+        <nimi>Kirjandus</nimi>
+        <hinne>5</hinne>
+      </aine>
+    </ained>
   </opilane>
   <opilane>
     <nimi>Liis</nimi>
@@ -84,16 +84,16 @@
       <linn>Pärnu</linn>
       <maakond>Pärnu</maakond>
     </elukoht>
-      <ained>
-          <aine>
-              <nimi>Matemaatika</nimi>
-              <hinne>3</hinne>
-          </aine>
-          <aine>
-              <nimi>Kirjandus</nimi>
-              <hinne>5</hinne>
-          </aine>
-      </ained>
+    <ained>
+      <aine>
+        <nimi>Matemaatika</nimi>
+        <hinne>3</hinne>
+      </aine>
+      <aine>
+        <nimi>Kirjandus</nimi>
+        <hinne>5</hinne>
+      </aine>
+    </ained>
   </opilane>
   <opilane>
     <nimi>Andres</nimi>
@@ -104,14 +104,14 @@
       <maakond>Harjumaa</maakond>
     </elukoht>
     <ained>
-        <aine>
-            <nimi>Matemaatika</nimi>
-            <hinne>3</hinne>
-        </aine>
-        <aine>
-            <nimi>Kirjandus</nimi>
-            <hinne>5</hinne>
-        </aine>
+      <aine>
+        <nimi>Matemaatika</nimi>
+        <hinne>3</hinne>
+      </aine>
+      <aine>
+        <nimi>Kirjandus</nimi>
+        <hinne>5</hinne>
+      </aine>
     </ained>
     <pilt/>
   </opilane>
@@ -120,59 +120,19 @@
       <linn>Test</linn>
       <maakond>Test</maakond>
     </elukoht>
-      <ained>
-          <aine>
-              <nimi>Matemaatika</nimi>
-              <hinne>3</hinne>
-          </aine>
-          <aine>
-              <nimi>IT</nimi>
-              <hinne>5</hinne>
-          </aine>
-      </ained>
+    <ained>
+      <aine>
+        <nimi>TestA</nimi>
+        <hinne>1</hinne>
+      </aine>
+      <aine>
+        <nimi>TestB</nimi>
+        <hinne>5</hinne>
+      </aine>
+    </ained>
     <nimi>Test</nimi>
-    <isikukood>2</isikukood>
+    <isikukood>Test</isikukood>
     <eriala>Test</eriala>
-  </opilane>
-  <opilane>
-    <elukoht>
-      <linn>A</linn>
-      <maakond>A</maakond>
-    </elukoht>
-      <ained>
-          <aine>
-              <nimi>Matemaatika</nimi>
-              <hinne>3</hinne>
-          </aine>
-          <aine>
-              <nimi>Kirjandus</nimi>
-              <hinne>5</hinne>
-          </aine>
-      </ained>
-    <nimi>A</nimi>
-    <isikukood>A</isikukood>
-    <eriala>A</eriala>
-    <pilt>https://bio.edu.ee/loomad/Imetajad/VULVULs.jpg</pilt>
-  </opilane>
-  <opilane>
-    <elukoht>
-      <linn>A</linn>
-      <maakond>A</maakond>
-    </elukoht>
-      <ained>
-          <aine>
-              <nimi>Matemaatika</nimi>
-              <hinne>3</hinne>
-          </aine>
-          <aine>
-              <nimi>Kirjandus</nimi>
-              <hinne>5</hinne>
-          </aine>
-      </ained>
-    <nimi>A</nimi>
-    <isikukood>A</isikukood>
-    <eriala>A</eriala>
-
-    <pilt>https://bio.edu.ee/loomad/Imetajad/VULVULs.jpg</pilt>
+    <pilt>Tets</pilt>
   </opilane>
 </opilased>
