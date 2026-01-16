@@ -1,0 +1,18 @@
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr, td{
+    border: 2px solid black;
+}
+
+#sisesta{
+    width: auto;
+}
+
+img{
+    width: auto;
+    height: 100px;
+}
