@@ -48,9 +48,15 @@ function erialaOtsing($paring){
                 array_push($tulemus, $opilane);
             }
             else
+                foreach($opilane->ained->aine as $aine)
+                    if(substr(strtolower($aine->nimi), 0, strlen($paring))==strtolower($paring)){
+                        array_push($tulemus, $opilane);
+                    }
+            else
                 if(substr(strtolower($opilane->isikukood), 0, strlen($paring))==strtolower($paring)){
                     array_push($tulemus, $opilane);
                 }
+
     }
     return $tulemus;
 }
@@ -70,7 +76,7 @@ function erialaOtsing($paring){
 
 <form action="?" method="post">
     <label for="otsing">Otsi:</label>
-    <input type="text" name="otsing" id="otsing" placeholder="Eriala | Nimi | Isikukood">
+    <input type="text" name="otsing" id="otsing" placeholder="Eriala | Nimi | Isikukood | Aine">
     <input type="submit" value="Otsi">
 </form>
 <?php
